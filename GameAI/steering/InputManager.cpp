@@ -6,6 +6,7 @@
 #include "GameMessageManager.h"
 #include "GameMessage.h"
 #include "PlayerMoveToMessage.h"
+#include "DrawTextMessage.h"
 #include "Game.h"
 
 InputManager::InputManager()
@@ -57,9 +58,12 @@ bool InputManager::checkInput()
 		std::stringstream mousePos;
 		mousePos << mouseState.x << ":" << mouseState.y;
 
+		GameMessage* pMessage = new DrawtextMessage(255, 255, 255, mouseState.x, mouseState.y, mousePos.str());
+		MESSAGE_MANAGER->addMessage(pMessage, 0);
 
 		//get current keyboard state
 		al_get_keyboard_state(&keyState);
+
 
 		//if escape key was down then exit the loop
 		if (al_key_down(&keyState, ALLEGRO_KEY_ESCAPE))

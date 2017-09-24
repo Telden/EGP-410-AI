@@ -11,7 +11,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CreateDynamicArrive.h" />
+    <ClInclude Include="CreateDynamicSeek.h" />
     <ClInclude Include="Defines.h" />
+    <ClInclude Include="DeleteUnitMessage.h" />
     <ClInclude Include="DrawTextMessage.h" />
     <ClInclude Include="DynamicArriveSteering.h" />
     <ClInclude Include="DynamicSeekSteering.h" />
@@ -34,6 +37,9 @@
     <ClInclude Include="UnitManager.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CreateDynamicArrive.cpp" />
+    <ClCompile Include="CreateDynamicSeek.cpp" />
+    <ClCompile Include="DeleteUnitMessage.cpp" />
     <ClCompile Include="DrawTextMessage.cpp" />
     <ClCompile Include="DynamicArriveSteering.cpp" />
     <ClCompile Include="DynamicSeekSteering.cpp" />

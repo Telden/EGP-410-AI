@@ -5,19 +5,24 @@
 #include "Trackable.h"
 #include <vector>
 
-#include "KinematicUnit.h"
 
+class Sprite;
+class KinematicUnit;
 
 class UnitManager : public Trackable
 {
 private:
 	std::vector<KinematicUnit*> mpUnits;
+	Sprite* mpEnemySprite;
+	const IDType AI_ICON_SPRITE_ID = 2;
 public:
 	UnitManager();
 	~UnitManager();
 
 	void addUnit(KinematicUnit* newUnit);
-	void createUnit();
+	void createDynamicArriveUnit(const Vector2D& pos);
+	void createDynamicSeekUnit(const Vector2D& pos);
+	void deleteUnit();
 	void updateUnits(float time);
 	void cleanup();
 

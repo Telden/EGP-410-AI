@@ -64,6 +64,15 @@
     <ClCompile Include="DrawTextMessage.cpp">
       <Filter>Source Files\Messaging</Filter>
     </ClCompile>
+    <ClCompile Include="CreateDynamicArrive.cpp">
+      <Filter>Source Files\Messaging</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateDynamicSeek.cpp">
+      <Filter>Source Files\Messaging</Filter>
+    </ClCompile>
+    <ClCompile Include="DeleteUnitMessage.cpp">
+      <Filter>Source Files\Messaging</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GraphicsBuffer.h">
@@ -127,6 +136,15 @@
       <Filter>Header Files\Util</Filter>
     </ClInclude>
     <ClInclude Include="DrawTextMessage.h">
+      <Filter>Header Files\Messaging</Filter>
+    </ClInclude>
+    <ClInclude Include="CreateDynamicArrive.h">
+      <Filter>Header Files\Messaging</Filter>
+    </ClInclude>
+    <ClInclude Include="CreateDynamicSeek.h">
+      <Filter>Header Files\Messaging</Filter>
+    </ClInclude>
+    <ClInclude Include="DeleteUnitMessage.h">
       <Filter>Header Files\Messaging</Filter>
     </ClInclude>
   </ItemGroup>
